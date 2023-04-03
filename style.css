@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Moon";
+    box-sizing: border-box;
+}
+
+body{margin:0;padding:0;}
+
+.oval {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: -45%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffffff
+
+   }
+ 
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 140px;
+}
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background:  #A020F0    ;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%
+}
+
+.btn{
+    background: #a81bff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: rgb(71, 0, 125);
+  }
+  
+#bannerimage {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1617957689233-207e3cd3c610?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHVycGxlJTIwZ3JhZGllbnR8ZW58MHx8MHx8&w=1000&q=80");
+        /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1
+
+  }
+
+
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffffff
+
+}
+
+ .content h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 40px;
+ }
+
+ .text-container{
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #000000
+ }
+
